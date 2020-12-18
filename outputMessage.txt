@@ -1,0 +1,826 @@
+WARNING:tensorflow:From eval.py:16: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From eval.py:74: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From eval.py:78: The name tf.GraphDef is deprecated. Please use tf.compat.v1.GraphDef instead.
+
+WARNING:tensorflow:From eval.py:86: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2020-12-18 06:29:55.268636: W tensorflow/core/platform/profile_utils/cpu_utils.cc:98] Failed to find bogomips in /proc/cpuinfo; cannot determine CPU frequency
+2020-12-18 06:29:55.275520: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0xaaaaf0d41e00 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-12-18 06:29:55.275544: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+WARNING:tensorflow:From /home/ma-user/miniconda3/envs/Tensorflow-1.15.0/lib/python3.7/site-packages/tensorflow_core/python/util/tf_should_use.py:198: initialize_all_variables (from tensorflow.python.ops.variables) is deprecated and will be removed after 2017-03-02.
+Instructions for updating:
+Use `tf.global_variables_initializer` instead.
+2020-12-18 06:29:55.335896: I tf_adapter/optimizers/get_attr_optimize_pass.cc:64] NpuAttrs job is localhost
+2020-12-18 06:29:55.336300: I tf_adapter/optimizers/get_attr_optimize_pass.cc:128] GetAttrOptimizePass_1 success. [0 ms]
+2020-12-18 06:29:55.336326: I tf_adapter/optimizers/mark_start_node_pass.cc:82] job is localhost Skip the optimizer : MarkStartNodePass.
+2020-12-18 06:29:55.336361: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:102] mix_compile_mode is False
+2020-12-18 06:29:55.336372: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:103] iterations_per_loop is 1
+2020-12-18 06:29:55.336450: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1763] OMPartition subgraph_1 begin.
+2020-12-18 06:29:55.336461: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1764] mix_compile_mode is False
+2020-12-18 06:29:55.336469: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1765] iterations_per_loop is 1
+2020-12-18 06:29:55.336499: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:354] FindNpuSupportCandidates enableDP:0, mix_compile_mode: 0, hasMakeIteratorOp:0, hasIteratorOp:0
+2020-12-18 06:29:55.336519: I tf_adapter/util/npu_ops_identifier.cc:67] [ALL] Parsing json from /usr/local/Ascend/opp/framework/built-in/tensorflow/npu_supported_ops.json
+2020-12-18 06:29:55.339527: I tf_adapter/util/npu_ops_identifier.cc:69] 690 ops parsed
+2020-12-18 06:29:55.339556: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:484] TFadapter find Npu support candidates cost: [3 ms]
+2020-12-18 06:29:55.339613: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:863] cluster Num is 1
+2020-12-18 06:29:55.339624: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:870] All nodes in graph: 3, max nodes count: 1 in subgraph: GeOp1_0 minGroupSize: 1
+2020-12-18 06:29:55.339637: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:897] Clear isolated NoOp from GeOp1_0
+2020-12-18 06:29:55.339651: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1851] OMPartition subgraph_1 markForPartition success.
+2020-12-18 06:29:55.339659: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1853] subgraphNum is 0
+2020-12-18 06:29:55.339718: I tf_adapter/optimizers/dp_tf_ge_conversion_pass.cc:917] DpTfToGEConversionPassImpl::RunPass, enable data preproc is false
+2020-12-18 06:29:55.340330: I tf_adapter/optimizers/add_input_pass.cc:96] job is localhost Skip the optimizer : AddInputPass.
+Tensor("input_8:0", shape=(?, 1, 256, 8), dtype=float32)
+Tensor("flatten_15/Reshape:0", shape=(?, ?), dtype=float32)
+2020-12-18 06:29:56.449642: I tf_adapter/optimizers/get_attr_optimize_pass.cc:64] NpuAttrs job is localhost
+2020-12-18 06:29:56.450325: I tf_adapter/optimizers/get_attr_optimize_pass.cc:128] GetAttrOptimizePass_2 success. [0 ms]
+2020-12-18 06:29:56.450359: I tf_adapter/optimizers/mark_start_node_pass.cc:82] job is localhost Skip the optimizer : MarkStartNodePass.
+2020-12-18 06:29:56.450576: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:102] mix_compile_mode is False
+2020-12-18 06:29:56.450592: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:103] iterations_per_loop is 1
+2020-12-18 06:29:56.450839: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1763] OMPartition subgraph_3 begin.
+2020-12-18 06:29:56.450853: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1764] mix_compile_mode is False
+2020-12-18 06:29:56.450862: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1765] iterations_per_loop is 1
+2020-12-18 06:29:56.452381: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:354] FindNpuSupportCandidates enableDP:0, mix_compile_mode: 0, hasMakeIteratorOp:0, hasIteratorOp:0
+2020-12-18 06:29:56.452422: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:228] node: Const is not in white list, so currently not support
+2020-12-18 06:29:56.452959: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:228] node: _Arg is not in white list, so currently not support
+2020-12-18 06:29:56.452979: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:228] node: _Retval is not in white list, so currently not support
+2020-12-18 06:29:56.453038: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:484] TFadapter find Npu support candidates cost: [0 ms]
+2020-12-18 06:29:56.484150: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:863] cluster Num is 1
+2020-12-18 06:29:56.484175: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:870] All nodes in graph: 775, max nodes count: 771 in subgraph: GeOp3_0 minGroupSize: 1
+2020-12-18 06:29:56.484438: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1851] OMPartition subgraph_3 markForPartition success.
+2020-12-18 06:29:56.491347: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1494] subgraphNum: 1
+2020-12-18 06:29:56.515725: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1943] OMPartition subgraph_3 SubgraphsInFunctions success.
+2020-12-18 06:29:56.515782: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1954] OMPartition subgraph_3 success. [65 ms]
+2020-12-18 06:29:56.515937: I tf_adapter/optimizers/dp_tf_ge_conversion_pass.cc:917] DpTfToGEConversionPassImpl::RunPass, enable data preproc is false
+2020-12-18 06:29:56.518581: I tf_adapter/optimizers/add_input_pass.cc:96] job is localhost Skip the optimizer : AddInputPass.
+2020-12-18 06:29:56.518796: I tf_adapter/kernels/geop_npu.cc:175] [GEOP] Begin GeOp initialize.
+2020-12-18 06:29:56.518857: I tf_adapter/util/ge_plugin.cc:52] [GePlugin] new constructor
+2020-12-18 06:29:56.518875: I tf_adapter/util/ge_plugin.cc:94] [GePlugin] graph run mode : 0
+2020-12-18 06:29:56.518888: I tf_adapter/util/ge_plugin.cc:99] [GePlugin] device id : 0
+2020-12-18 06:29:56.518899: I tf_adapter/util/ge_plugin.cc:119] [GePlugin] env RANK_TABLE_FILE:/user/config/nbstart_hccl.json
+2020-12-18 06:29:56.518908: I tf_adapter/util/ge_plugin.cc:129] [GePlugin] env RANK_ID:0
+2020-12-18 06:29:56.518919: I tf_adapter/util/ge_plugin.cc:142] [GePlugin] is_tailing_optimization : 0
+2020-12-18 06:29:56.518928: I tf_adapter/util/ge_plugin.cc:145] [GePlugin] profiling_mode : 0, profiling_options:training_trace, fp_point: , bp_point: 
+2020-12-18 06:29:56.518937: I tf_adapter/util/ge_plugin.cc:151] [GePlugin] precision_mode : force_fp16
+2020-12-18 06:29:56.518945: I tf_adapter/util/ge_plugin.cc:154] [GePlugin] auto_tune_mode : 
+2020-12-18 06:29:56.518953: I tf_adapter/util/ge_plugin.cc:157] [GePlugin] op_debug_level : 0
+2020-12-18 06:29:56.518961: I tf_adapter/util/ge_plugin.cc:160] [GePlugin] enable_scope_fusion_passes : 
+2020-12-18 06:29:56.518968: I tf_adapter/util/ge_plugin.cc:163] [GePlugin] enable_exception_dump : 0
+2020-12-18 06:29:56.518975: I tf_adapter/util/ge_plugin.cc:166] [GePlugin] Start Init tdt host.
+2020-12-18 06:29:56.520709: I tf_adapter/util/ge_plugin.cc:172] [GePlugin] Tdt host init succeed.
+2020-12-18 06:29:58.381796: I tf_adapter/util/ge_plugin.cc:179] [GePlugin] Initialize ge success.
+2020-12-18 06:29:58.388520: I tf_adapter/util/ge_plugin.cc:187] [GePlugin] Initialize parser success.
+2020-12-18 06:29:58.388548: I tf_adapter/kernels/geop_npu.cc:203] [GEOP] GePlugin init success
+2020-12-18 06:29:58.388599: I tf_adapter/kernels/geop_npu.cc:209] [GEOP] GeOp Initialize success, cost: [1869 ms]
+2020-12-18 06:29:58.388884: I tf_adapter/kernels/geop_npu.cc:364] [GEOP] get tf session directa4dded3a6b46b110 from session handle.
+2020-12-18 06:29:58.388936: I tf_adapter/kernels/geop_npu.cc:375] [GEOP] Node name: GeOp3_0 , tf session: directa4dded3a6b46b110
+2020-12-18 06:29:58.388955: I tf_adapter/util/session_manager.cc:100] [GEOP] variable_acceleration :1
+2020-12-18 06:29:58.388968: I tf_adapter/util/session_manager.cc:102] [GEOP] hcom_parallel :0
+2020-12-18 06:29:58.388977: I tf_adapter/util/session_manager.cc:105] [GEOP] stream_max_parallel_num :
+2020-12-18 06:29:58.388992: I tf_adapter/util/session_manager.cc:121] [GEOP] op_select_implmode : high_performance
+2020-12-18 06:29:58.389000: I tf_adapter/util/session_manager.cc:123] [GEOP] optypelist_for_implmode : 
+2020-12-18 06:29:58.389008: W tf_adapter/util/session_manager.cc:129] [GEOP] can not get DISABLE_REUSE_MEMORY in env, set to default 0
+2020-12-18 06:29:58.389021: I tf_adapter/util/session_manager.cc:135] [GEOP] enable_dump :0, dump_path :, dump_step :NA, dump_mode :output, enable_dump_debug :0, dump_debug_mode :all
+2020-12-18 06:29:58.389030: I tf_adapter/util/session_manager.cc:82] [GEOP] hcom_parallel :0
+2020-12-18 06:29:58.389037: I tf_adapter/util/session_manager.cc:85] [GEOP] stream_max_parallel_num :
+2020-12-18 06:29:58.392624: I tf_adapter/kernels/geop_npu.cc:382] [GEOP] tf session: directa4dded3a6b46b110 get ge session success.
+2020-12-18 06:29:58.392658: I tf_adapter/kernels/geop_npu.cc:388] [GEOP] Begin GeOp::ComputeAsync, kernel_name:GeOp3_0, num_inputs:1, num_outputs:1
+2020-12-18 06:29:58.392676: I tf_adapter/kernels/geop_npu.cc:251] [GEOP] tf session directa4dded3a6b46b110, graph id: 1 does not build yet, no need to check rebuild
+2020-12-18 06:29:58.392727: I tf_adapter/util/infershape_util.cc:346] InferShapeUtil::InferShape
+2020-12-18 06:29:58.392739: I tf_adapter/util/infershape_util.cc:84] The signature name of FunctionDef is GeOp3_0.
+2020-12-18 06:29:58.402234: I tf_adapter/util/infershape_util.cc:96] InstantiateFunction GeOp3_0 success.
+2020-12-18 06:29:58.406145: I tf_adapter/util/infershape_util.cc:101] ConvertNodeDefsToGraph GeOp3_0 success.
+2020-12-18 06:29:58.410031: W tf_adapter/util/infershape_util.cc:304] The InferenceContext of node _SOURCE is null.
+2020-12-18 06:29:58.410061: W tf_adapter/util/infershape_util.cc:304] The InferenceContext of node _SINK is null.
+2020-12-18 06:29:58.411172: W tf_adapter/util/infershape_util.cc:326] The shape of node flatten_14/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.411215: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_105/MatMul output 0 is [?,8192], unknown shape.
+2020-12-18 06:29:58.411238: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_105/BiasAdd output 0 is [?,8192], unknown shape.
+2020-12-18 06:29:58.411257: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_161/batchnorm/mul_1 output 0 is [?,8192], unknown shape.
+2020-12-18 06:29:58.411275: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_161/batchnorm/add_1 output 0 is [?,8192], unknown shape.
+2020-12-18 06:29:58.411293: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_191/Softplus output 0 is [?,8192], unknown shape.
+2020-12-18 06:29:58.411311: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_191/Tanh output 0 is [?,8192], unknown shape.
+2020-12-18 06:29:58.411328: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_191/mul output 0 is [?,8192], unknown shape.
+2020-12-18 06:29:58.411362: W tf_adapter/util/infershape_util.cc:326] The shape of node reshape_105/Reshape output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411380: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_161/Conv2D output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411402: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_161/BiasAdd output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411419: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_162/FusedBatchNormV3 output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411435: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_162/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.411458: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_192/Softplus output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411475: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_192/Tanh output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411491: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_192/mul output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411508: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_162/Conv2D output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:29:58.411528: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_162/BiasAdd output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:29:58.411545: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_163/FusedBatchNormV3 output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:29:58.411559: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_163/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.411581: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_193/Softplus output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:29:58.411597: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_193/Tanh output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:29:58.411613: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_193/mul output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:29:58.411630: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_163/Conv2D output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411650: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_163/BiasAdd output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411666: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_164/FusedBatchNormV3 output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:29:58.411680: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_164/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.411701: W tf_adapter/util/infershape_util.cc:326] The shape of node global_average_pooling2d_49/Mean output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.411718: W tf_adapter/util/infershape_util.cc:326] The shape of node global_max_pooling2d_49/Max output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.411767: W tf_adapter/util/infershape_util.cc:326] The shape of node reshape_106/Reshape output 0 is [?,1,1,32], unknown shape.
+2020-12-18 06:29:58.411785: W tf_adapter/util/infershape_util.cc:326] The shape of node reshape_107/Reshape output 0 is [?,1,1,32], unknown shape.
+2020-12-18 06:29:58.411867: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.411883: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.411900: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106/Tensordot/MatMul output 0 is [?,4], unknown shape.
+2020-12-18 06:29:58.411917: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106_1/Tensordot/MatMul output 0 is [?,4], unknown shape.
+2020-12-18 06:29:58.411934: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106/Tensordot output 0 is [?,?,?,4], unknown shape.
+2020-12-18 06:29:58.411950: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106_1/Tensordot output 0 is [?,?,?,4], unknown shape.
+2020-12-18 06:29:58.411966: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106/BiasAdd output 0 is [?,?,?,4], unknown shape.
+2020-12-18 06:29:58.411983: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106_1/BiasAdd output 0 is [?,?,?,4], unknown shape.
+2020-12-18 06:29:58.412000: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106/Relu output 0 is [?,?,?,4], unknown shape.
+2020-12-18 06:29:58.412016: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_106_1/Relu output 0 is [?,?,?,4], unknown shape.
+2020-12-18 06:29:58.412107: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.412125: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.412142: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.412158: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.412175: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412192: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412212: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412229: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_107_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412246: W tf_adapter/util/infershape_util.cc:326] The shape of node add_98_1/add output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412263: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_49/Sigmoid output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412280: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_49/mul output 0 is [?,?,256,32], unknown shape.
+2020-12-18 06:29:58.412296: W tf_adapter/util/infershape_util.cc:326] The shape of node add_99/add output 0 is [?,?,256,32], unknown shape.
+2020-12-18 06:29:58.412316: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_194/Softplus output 0 is [?,?,256,32], unknown shape.
+2020-12-18 06:29:58.412333: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_194/Tanh output 0 is [?,?,256,32], unknown shape.
+2020-12-18 06:29:58.412349: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_194/mul output 0 is [?,?,256,32], unknown shape.
+2020-12-18 06:29:58.412407: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_165/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.412473: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_166/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.412537: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_167/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.412598: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_168/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.412750: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.412769: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.412790: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.412808: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.412826: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412843: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412860: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412877: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412896: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412914: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_108_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.412996: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.413016: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.413033: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.413050: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.413067: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.413083: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.413100: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.413121: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_109_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.413137: W tf_adapter/util/infershape_util.cc:326] The shape of node add_100/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.413155: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_50/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.413171: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_50/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413188: W tf_adapter/util/infershape_util.cc:326] The shape of node add_101/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413204: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_199/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413221: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_199/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413240: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_199/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413257: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_168/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.413279: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_168/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.413296: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_169/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.413310: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_169/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.413337: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_200/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.413354: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_200/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.413370: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_200/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.413387: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_169/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.413407: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_169/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.413424: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_170/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.413438: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_170/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.413464: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_201/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.413481: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_201/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.413498: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_201/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.413514: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_170/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413538: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_170/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413555: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_171/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.413570: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_171/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.413716: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.413735: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.413751: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.413768: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.413785: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.413801: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.413821: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.413838: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.413855: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.413872: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_110_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.413959: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.413976: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.413992: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.414009: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.414026: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.414046: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.414063: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.414080: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_111_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.414096: W tf_adapter/util/infershape_util.cc:326] The shape of node add_102/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.414114: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_51/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.414131: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_51/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414151: W tf_adapter/util/infershape_util.cc:326] The shape of node add_103/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414168: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_202/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414184: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_202/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414200: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_202/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414217: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_171/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.414241: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_171/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.414258: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_172/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.414273: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_172/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.414296: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_203/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.414313: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_203/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.414329: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_203/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.414346: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_172/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.414373: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_172/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.414391: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_173/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.414405: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_173/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.414427: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_204/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.414444: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_204/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.414460: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_204/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.414480: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_173/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414502: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_173/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414519: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_174/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.414532: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_174/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.414681: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.414699: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.414716: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.414736: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.414754: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.414771: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.414787: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.414804: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.414821: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.414840: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_112_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.414923: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.414940: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.414960: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.414977: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.414994: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415010: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415027: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415044: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_113_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415064: W tf_adapter/util/infershape_util.cc:326] The shape of node add_104/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415081: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_52/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415098: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_52/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415114: W tf_adapter/util/infershape_util.cc:326] The shape of node add_105/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415130: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_205/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415147: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_205/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415165: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_205/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415183: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_174/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.415204: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_174/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.415221: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_175/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.415235: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_175/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.415262: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_206/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.415280: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_206/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.415296: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_206/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.415313: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_175/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.415333: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_175/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.415350: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_176/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.415364: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_176/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.415390: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_207/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.415407: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_207/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.415423: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_207/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.415440: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_176/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415460: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_176/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415476: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_177/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.415490: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_177/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.415639: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.415657: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.415674: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.415690: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.415707: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.415724: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.415741: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.415760: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.415777: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.415794: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_114_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.415878: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.415896: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.415912: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.415929: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.415946: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415962: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.415982: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416000: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_115_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416016: W tf_adapter/util/infershape_util.cc:326] The shape of node add_106/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416033: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_53/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416050: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_53/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416067: W tf_adapter/util/infershape_util.cc:326] The shape of node add_107/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416086: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_208/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416103: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_208/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416119: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_208/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416135: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_177/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.416159: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_177/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.416177: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_178/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.416191: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_178/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.416213: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_209/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.416229: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_209/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.416246: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_209/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.416262: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_178/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.416285: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_178/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.416302: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_179/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.416317: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_179/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.416339: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_210/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.416354: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_210/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.416370: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_210/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.416387: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_179/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416420: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_179/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416440: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_180/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.416455: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_180/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.416605: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.416624: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.416641: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.416658: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.416678: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.416695: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.416712: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.416729: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.416745: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.416761: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_116_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.416847: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.416864: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.416880: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.416901: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.416917: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416934: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416950: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416967: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_117_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.416983: W tf_adapter/util/infershape_util.cc:326] The shape of node add_108/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417003: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_54/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417020: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_54/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417037: W tf_adapter/util/infershape_util.cc:326] The shape of node add_109/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417053: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_211/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417070: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_211/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417086: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_211/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417106: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_180/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.417127: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_180/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.417144: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_181/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.417158: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_181/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.417184: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_212/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.417201: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_212/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.417217: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_212/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:29:58.417234: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_181/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.417254: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_181/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.417270: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_182/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.417284: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_182/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.417310: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_213/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.417327: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_213/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.417344: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_213/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:29:58.417360: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_182/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417381: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_182/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417398: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_183/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417412: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_183/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:29:58.417559: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.417582: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.417600: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.417616: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:29:58.417633: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.417650: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.417666: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.417686: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.417703: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.417720: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_118_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:29:58.417808: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.417825: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.417842: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.417858: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:29:58.417875: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417891: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417911: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417929: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_119_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417946: W tf_adapter/util/infershape_util.cc:326] The shape of node add_110/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417963: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_55/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:29:58.417979: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_55/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.417996: W tf_adapter/util/infershape_util.cc:326] The shape of node add_111/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.418012: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_214/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.418032: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_214/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.418049: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_214/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:29:58.418065: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_183/Conv2D output 0 is [10000,?,256,4], unknown shape.
+2020-12-18 06:29:58.418087: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_183/BiasAdd output 0 is [10000,?,256,4], unknown shape.
+2020-12-18 06:29:58.418103: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_183/Sigmoid output 0 is [10000,?,256,4], unknown shape.
+2020-12-18 06:29:58.418120: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_215/strided_slice output 0 is [10000,?,256,2], unknown shape.
+2020-12-18 06:29:58.418145: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_215/strided_slice_1 output 0 is [10000,?,256,2], unknown shape.
+2020-12-18 06:29:58.418164: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_215/concat output 0 is [10000,?,512,2], unknown shape.
+2020-12-18 06:29:58.418197: W tf_adapter/util/infershape_util.cc:326] The shape of node flatten_15/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:29:58.418212: I tf_adapter/util/infershape_util.cc:395] InferShapeUtil::InferShape success
+2020-12-18 06:29:58.447122: I tf_adapter/kernels/geop_npu.cc:440] [GEOP] In GEOP computeAsync, kernel_name:GeOp3_0 ,TFadapter cost time: [54 ms]
+2020-12-18 06:29:58.447166: I tf_adapter/kernels/geop_npu.cc:442] [GEOP] TFadpter process graph success, GE parser begin, kernel_name:GeOp3_0 ,tf session: directa4dded3a6b46b110 ,graph id :1
+2020-12-18 06:29:58.706371: I tf_adapter/kernels/geop_npu.cc:508] [GEOP] Tensorflow graph parse to ge graph success, kernel_name:GeOp3_0 ,tf session: directa4dded3a6b46b110 ,graph id: 1
+2020-12-18 06:29:58.707363: I tf_adapter/kernels/geop_npu.cc:539] [GEOP] Add graph to ge session success, kernel_name:GeOp3_0 ,tf session: directa4dded3a6b46b110 ,graph id:1
+2020-12-18 06:29:58.711480: I tf_adapter/kernels/geop_npu.cc:580] [GEOP] Call ge session RunGraphAsync, kernel_name:GeOp3_0 ,tf session: directa4dded3a6b46b110 ,graph id: 1
+2020-12-18 06:29:58.711611: I tf_adapter/kernels/geop_npu.cc:593] [GEOP] End GeOp::ComputeAsync, kernel_name:GeOp3_0, ret_status:success ,tf session: directa4dded3a6b46b110 ,graph id: 1 [318 ms]
+2020-12-18 06:30:30.914995: I tf_adapter/kernels/geop_npu.cc:76] BuildOutputTensorInfo, num_outputs:1
+2020-12-18 06:30:30.915122: I tf_adapter/kernels/geop_npu.cc:103] BuildOutputTensorInfo, output index:0, total_bytes:40960000, shape: 10000 1024, tensor_ptr:281464802308160, output281465390280720
+2020-12-18 06:30:30.949359: I tf_adapter/kernels/geop_npu.cc:573] [GEOP] RunGraphAsync callback, status:0, kernel_name:GeOp3_0[ 32237930us]
+2020-12-18 06:30:31.079319: I tf_adapter/kernels/geop_npu.cc:216] [GEOP] GeOp start to finalize, tf session: directa4dded3a6b46b110, graph_id_: 1
+2020-12-18 06:30:31.079388: I tf_adapter/util/session_manager.cc:69] find ge session connect with tf session directa4dded3a6b46b110
+2020-12-18 06:30:32.489264: I tf_adapter/util/session_manager.cc:74] destroy ge session connect with tf session directa4dded3a6b46b110 success.
+2020-12-18 06:30:32.959404: I tf_adapter/util/ge_plugin.cc:207] [GePlugin] Start destroy tdt host.
+2020-12-18 06:30:32.971287: I tf_adapter/util/ge_plugin.cc:212] [GePlugin] Tdt host destroy succeed.
+2020-12-18 06:30:32.971311: I tf_adapter/kernels/geop_npu.cc:234] [GEOP] GePlugin Finalize success
+2020-12-18 06:30:32.971336: W tf_adapter/util/generate_report.cc:55] [GenerateReport] Remove check report failed. path:/home/ma-user/work/check_result.tf.json
+2020-12-18 06:30:32.971346: I tf_adapter/util/generate_report.cc:96] [GenerateReport] All nodes are supported, no need to save report.
+2020-12-18 06:30:32.971361: I tf_adapter/kernels/geop_npu.cc:245] [GEOP] GeOp Finalize success, tf session: directa4dded3a6b46b110, graph_id_: 1
+done32  time: 0:00:39.655663
+2020-12-18 06:30:34.828570: I tf_adapter/optimizers/get_attr_optimize_pass.cc:64] NpuAttrs job is localhost
+2020-12-18 06:30:34.828884: I tf_adapter/optimizers/get_attr_optimize_pass.cc:128] GetAttrOptimizePass_3 success. [0 ms]
+2020-12-18 06:30:34.828906: I tf_adapter/optimizers/mark_start_node_pass.cc:82] job is localhost Skip the optimizer : MarkStartNodePass.
+2020-12-18 06:30:34.828939: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:102] mix_compile_mode is False
+2020-12-18 06:30:34.828951: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:103] iterations_per_loop is 1
+2020-12-18 06:30:34.829010: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1763] OMPartition subgraph_5 begin.
+2020-12-18 06:30:34.829019: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1764] mix_compile_mode is False
+2020-12-18 06:30:34.829028: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1765] iterations_per_loop is 1
+2020-12-18 06:30:34.829058: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:354] FindNpuSupportCandidates enableDP:0, mix_compile_mode: 0, hasMakeIteratorOp:0, hasIteratorOp:0
+2020-12-18 06:30:34.829077: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:484] TFadapter find Npu support candidates cost: [0 ms]
+2020-12-18 06:30:34.829122: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:863] cluster Num is 1
+2020-12-18 06:30:34.829132: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:870] All nodes in graph: 3, max nodes count: 1 in subgraph: GeOp5_0 minGroupSize: 1
+2020-12-18 06:30:34.829144: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:897] Clear isolated NoOp from GeOp5_0
+2020-12-18 06:30:34.829158: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1851] OMPartition subgraph_5 markForPartition success.
+2020-12-18 06:30:34.829167: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1853] subgraphNum is 0
+2020-12-18 06:30:34.829220: I tf_adapter/optimizers/dp_tf_ge_conversion_pass.cc:917] DpTfToGEConversionPassImpl::RunPass, enable data preproc is false
+2020-12-18 06:30:34.831277: I tf_adapter/optimizers/add_input_pass.cc:96] job is localhost Skip the optimizer : AddInputPass.
+Tensor("input_7:0", shape=(?, 1, 256, 8), dtype=float32)
+Tensor("flatten_13/Reshape:0", shape=(?, ?), dtype=float32)
+2020-12-18 06:30:36.091687: I tf_adapter/optimizers/get_attr_optimize_pass.cc:64] NpuAttrs job is localhost
+2020-12-18 06:30:36.092348: I tf_adapter/optimizers/get_attr_optimize_pass.cc:128] GetAttrOptimizePass_4 success. [0 ms]
+2020-12-18 06:30:36.092381: I tf_adapter/optimizers/mark_start_node_pass.cc:82] job is localhost Skip the optimizer : MarkStartNodePass.
+2020-12-18 06:30:36.092631: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:102] mix_compile_mode is False
+2020-12-18 06:30:36.092651: I tf_adapter/optimizers/mark_noneed_optimize_pass.cc:103] iterations_per_loop is 1
+2020-12-18 06:30:36.092918: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1763] OMPartition subgraph_7 begin.
+2020-12-18 06:30:36.092933: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1764] mix_compile_mode is False
+2020-12-18 06:30:36.092943: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1765] iterations_per_loop is 1
+2020-12-18 06:30:36.094535: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:354] FindNpuSupportCandidates enableDP:0, mix_compile_mode: 0, hasMakeIteratorOp:0, hasIteratorOp:0
+2020-12-18 06:30:36.095164: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:484] TFadapter find Npu support candidates cost: [0 ms]
+2020-12-18 06:30:36.130155: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:863] cluster Num is 1
+2020-12-18 06:30:36.130185: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:870] All nodes in graph: 776, max nodes count: 772 in subgraph: GeOp7_0 minGroupSize: 1
+2020-12-18 06:30:36.130529: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1851] OMPartition subgraph_7 markForPartition success.
+2020-12-18 06:30:36.138101: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1494] subgraphNum: 1
+2020-12-18 06:30:36.151796: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1943] OMPartition subgraph_7 SubgraphsInFunctions success.
+2020-12-18 06:30:36.151830: I tf_adapter/optimizers/om_partition_subgraphs_pass.cc:1954] OMPartition subgraph_7 success. [59 ms]
+2020-12-18 06:30:36.151907: I tf_adapter/optimizers/dp_tf_ge_conversion_pass.cc:917] DpTfToGEConversionPassImpl::RunPass, enable data preproc is false
+2020-12-18 06:30:36.155145: I tf_adapter/optimizers/add_input_pass.cc:96] job is localhost Skip the optimizer : AddInputPass.
+2020-12-18 06:30:36.155379: I tf_adapter/kernels/geop_npu.cc:175] [GEOP] Begin GeOp initialize.
+2020-12-18 06:30:36.155440: I tf_adapter/util/ge_plugin.cc:94] [GePlugin] graph run mode : 0
+2020-12-18 06:30:36.155456: I tf_adapter/util/ge_plugin.cc:99] [GePlugin] device id : 0
+2020-12-18 06:30:36.155468: I tf_adapter/util/ge_plugin.cc:119] [GePlugin] env RANK_TABLE_FILE:/user/config/nbstart_hccl.json
+2020-12-18 06:30:36.155479: I tf_adapter/util/ge_plugin.cc:129] [GePlugin] env RANK_ID:0
+2020-12-18 06:30:36.155490: I tf_adapter/util/ge_plugin.cc:142] [GePlugin] is_tailing_optimization : 0
+2020-12-18 06:30:36.155500: I tf_adapter/util/ge_plugin.cc:145] [GePlugin] profiling_mode : 0, profiling_options:training_trace, fp_point: , bp_point: 
+2020-12-18 06:30:36.155509: I tf_adapter/util/ge_plugin.cc:151] [GePlugin] precision_mode : force_fp16
+2020-12-18 06:30:36.155517: I tf_adapter/util/ge_plugin.cc:154] [GePlugin] auto_tune_mode : 
+2020-12-18 06:30:36.155525: I tf_adapter/util/ge_plugin.cc:157] [GePlugin] op_debug_level : 0
+2020-12-18 06:30:36.155533: I tf_adapter/util/ge_plugin.cc:160] [GePlugin] enable_scope_fusion_passes : 
+2020-12-18 06:30:36.155541: I tf_adapter/util/ge_plugin.cc:163] [GePlugin] enable_exception_dump : 0
+2020-12-18 06:30:36.155549: I tf_adapter/util/ge_plugin.cc:166] [GePlugin] Start Init tdt host.
+2020-12-18 06:30:36.156919: I tf_adapter/util/ge_plugin.cc:172] [GePlugin] Tdt host init succeed.
+2020-12-18 06:30:37.107363: I tf_adapter/util/ge_plugin.cc:179] [GePlugin] Initialize ge success.
+2020-12-18 06:30:37.110552: I tf_adapter/util/ge_plugin.cc:187] [GePlugin] Initialize parser success.
+2020-12-18 06:30:37.110577: I tf_adapter/kernels/geop_npu.cc:203] [GEOP] GePlugin init success
+2020-12-18 06:30:37.110628: I tf_adapter/kernels/geop_npu.cc:209] [GEOP] GeOp Initialize success, cost: [955 ms]
+2020-12-18 06:30:37.110789: I tf_adapter/kernels/geop_npu.cc:364] [GEOP] get tf session direct62e56b9912d9fa3a from session handle.
+2020-12-18 06:30:37.110832: I tf_adapter/kernels/geop_npu.cc:375] [GEOP] Node name: GeOp7_0 , tf session: direct62e56b9912d9fa3a
+2020-12-18 06:30:37.110849: I tf_adapter/util/session_manager.cc:100] [GEOP] variable_acceleration :1
+2020-12-18 06:30:37.110858: I tf_adapter/util/session_manager.cc:102] [GEOP] hcom_parallel :0
+2020-12-18 06:30:37.110867: I tf_adapter/util/session_manager.cc:105] [GEOP] stream_max_parallel_num :
+2020-12-18 06:30:37.110881: I tf_adapter/util/session_manager.cc:121] [GEOP] op_select_implmode : high_performance
+2020-12-18 06:30:37.110889: I tf_adapter/util/session_manager.cc:123] [GEOP] optypelist_for_implmode : 
+2020-12-18 06:30:37.110897: W tf_adapter/util/session_manager.cc:129] [GEOP] can not get DISABLE_REUSE_MEMORY in env, set to default 0
+2020-12-18 06:30:37.110911: I tf_adapter/util/session_manager.cc:135] [GEOP] enable_dump :0, dump_path :, dump_step :NA, dump_mode :output, enable_dump_debug :0, dump_debug_mode :all
+2020-12-18 06:30:37.110921: I tf_adapter/util/session_manager.cc:82] [GEOP] hcom_parallel :0
+2020-12-18 06:30:37.110929: I tf_adapter/util/session_manager.cc:85] [GEOP] stream_max_parallel_num :
+2020-12-18 06:30:37.114348: I tf_adapter/kernels/geop_npu.cc:382] [GEOP] tf session: direct62e56b9912d9fa3a get ge session success.
+2020-12-18 06:30:37.114375: I tf_adapter/kernels/geop_npu.cc:388] [GEOP] Begin GeOp::ComputeAsync, kernel_name:GeOp7_0, num_inputs:1, num_outputs:1
+2020-12-18 06:30:37.114393: I tf_adapter/kernels/geop_npu.cc:251] [GEOP] tf session direct62e56b9912d9fa3a, graph id: 1 does not build yet, no need to check rebuild
+2020-12-18 06:30:37.114444: I tf_adapter/util/infershape_util.cc:346] InferShapeUtil::InferShape
+2020-12-18 06:30:37.114456: I tf_adapter/util/infershape_util.cc:84] The signature name of FunctionDef is GeOp7_0.
+2020-12-18 06:30:37.122010: I tf_adapter/util/infershape_util.cc:96] InstantiateFunction GeOp7_0 success.
+2020-12-18 06:30:37.125904: I tf_adapter/util/infershape_util.cc:101] ConvertNodeDefsToGraph GeOp7_0 success.
+2020-12-18 06:30:37.129818: W tf_adapter/util/infershape_util.cc:304] The InferenceContext of node _SOURCE is null.
+2020-12-18 06:30:37.129842: W tf_adapter/util/infershape_util.cc:304] The InferenceContext of node _SINK is null.
+2020-12-18 06:30:37.130968: W tf_adapter/util/infershape_util.cc:326] The shape of node flatten_12/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.131004: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_90/MatMul output 0 is [?,4096], unknown shape.
+2020-12-18 06:30:37.131026: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_90/BiasAdd output 0 is [?,4096], unknown shape.
+2020-12-18 06:30:37.131045: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_138/batchnorm/mul_1 output 0 is [?,4096], unknown shape.
+2020-12-18 06:30:37.131064: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_138/batchnorm/add_1 output 0 is [?,4096], unknown shape.
+2020-12-18 06:30:37.131082: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_164/Softplus output 0 is [?,4096], unknown shape.
+2020-12-18 06:30:37.131100: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_164/Tanh output 0 is [?,4096], unknown shape.
+2020-12-18 06:30:37.131117: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_164/mul output 0 is [?,4096], unknown shape.
+2020-12-18 06:30:37.131152: W tf_adapter/util/infershape_util.cc:326] The shape of node reshape_90/Reshape output 0 is [?,1,256,16], unknown shape.
+2020-12-18 06:30:37.131170: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_138/Conv2D output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:30:37.131193: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_138/BiasAdd output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:30:37.131210: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_139/FusedBatchNormV3 output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:30:37.131226: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_139/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.131250: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_165/Softplus output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:30:37.131267: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_165/Tanh output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:30:37.131285: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_165/mul output 0 is [?,1,256,32], unknown shape.
+2020-12-18 06:30:37.131302: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_139/Conv2D output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:30:37.131323: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_139/BiasAdd output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:30:37.131340: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_140/FusedBatchNormV3 output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:30:37.131355: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_140/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.131377: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_166/Softplus output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:30:37.131394: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_166/Tanh output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:30:37.131411: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_166/mul output 0 is [?,1,256,64], unknown shape.
+2020-12-18 06:30:37.131428: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_140/Conv2D output 0 is [?,1,256,16], unknown shape.
+2020-12-18 06:30:37.131447: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_140/BiasAdd output 0 is [?,1,256,16], unknown shape.
+2020-12-18 06:30:37.131464: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_141/FusedBatchNormV3 output 0 is [?,1,256,16], unknown shape.
+2020-12-18 06:30:37.131478: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_141/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.131500: W tf_adapter/util/infershape_util.cc:326] The shape of node global_average_pooling2d_42/Mean output 0 is [?,16], unknown shape.
+2020-12-18 06:30:37.131517: W tf_adapter/util/infershape_util.cc:326] The shape of node global_max_pooling2d_42/Max output 0 is [?,16], unknown shape.
+2020-12-18 06:30:37.131567: W tf_adapter/util/infershape_util.cc:326] The shape of node reshape_91/Reshape output 0 is [?,1,1,16], unknown shape.
+2020-12-18 06:30:37.131585: W tf_adapter/util/infershape_util.cc:326] The shape of node reshape_92/Reshape output 0 is [?,1,1,16], unknown shape.
+2020-12-18 06:30:37.131665: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.131681: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.131698: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91/Tensordot/MatMul output 0 is [?,2], unknown shape.
+2020-12-18 06:30:37.131714: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91_1/Tensordot/MatMul output 0 is [?,2], unknown shape.
+2020-12-18 06:30:37.131731: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91/Tensordot output 0 is [?,?,?,2], unknown shape.
+2020-12-18 06:30:37.131748: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91_1/Tensordot output 0 is [?,?,?,2], unknown shape.
+2020-12-18 06:30:37.131765: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91/BiasAdd output 0 is [?,?,?,2], unknown shape.
+2020-12-18 06:30:37.131782: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91_1/BiasAdd output 0 is [?,?,?,2], unknown shape.
+2020-12-18 06:30:37.131799: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91/Relu output 0 is [?,?,?,2], unknown shape.
+2020-12-18 06:30:37.131816: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_91_1/Relu output 0 is [?,?,?,2], unknown shape.
+2020-12-18 06:30:37.131906: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.131924: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.131940: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92/Tensordot/MatMul output 0 is [?,16], unknown shape.
+2020-12-18 06:30:37.131957: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92_1/Tensordot/MatMul output 0 is [?,16], unknown shape.
+2020-12-18 06:30:37.131974: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92/Tensordot output 0 is [?,?,?,16], unknown shape.
+2020-12-18 06:30:37.131991: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92_1/Tensordot output 0 is [?,?,?,16], unknown shape.
+2020-12-18 06:30:37.132011: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92/BiasAdd output 0 is [?,?,?,16], unknown shape.
+2020-12-18 06:30:37.132029: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_92_1/BiasAdd output 0 is [?,?,?,16], unknown shape.
+2020-12-18 06:30:37.132046: W tf_adapter/util/infershape_util.cc:326] The shape of node add_84_1/add output 0 is [?,?,?,16], unknown shape.
+2020-12-18 06:30:37.132063: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_42/Sigmoid output 0 is [?,?,?,16], unknown shape.
+2020-12-18 06:30:37.132080: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_42/mul output 0 is [?,?,256,16], unknown shape.
+2020-12-18 06:30:37.132097: W tf_adapter/util/infershape_util.cc:326] The shape of node add_85/add output 0 is [?,?,256,16], unknown shape.
+2020-12-18 06:30:37.132114: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_167/Softplus output 0 is [?,?,256,16], unknown shape.
+2020-12-18 06:30:37.132134: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_167/Tanh output 0 is [?,?,256,16], unknown shape.
+2020-12-18 06:30:37.132151: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_167/mul output 0 is [?,?,256,16], unknown shape.
+2020-12-18 06:30:37.132199: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_142/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.132262: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_143/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.132327: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_144/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.132388: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_145/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.132554: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.132574: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.132591: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.132611: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.132630: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.132648: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.132665: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.132682: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.132699: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.132719: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_93_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.132803: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.132822: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.132844: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.132861: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.132879: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.132896: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.132912: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.132929: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_94_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.132949: W tf_adapter/util/infershape_util.cc:326] The shape of node add_86/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.132966: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_43/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.132984: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_43/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133001: W tf_adapter/util/infershape_util.cc:326] The shape of node add_87/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133018: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_172/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133035: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_172/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133055: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_172/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133072: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_145/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.133094: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_145/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.133111: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_146/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.133126: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_146/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.133153: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_173/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.133170: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_173/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.133186: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_173/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.133204: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_146/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.133225: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_146/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.133242: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_147/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.133256: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_147/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.133283: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_174/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.133300: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_174/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.133317: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_174/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.133333: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_147/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133354: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_147/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133371: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_148/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133386: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_148/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.133540: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.133559: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.133576: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.133593: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.133610: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.133627: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.133647: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.133664: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.133682: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.133698: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_95_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.133784: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.133802: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.133818: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.133835: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.133852: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.133872: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.133889: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.133907: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_96_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.133924: W tf_adapter/util/infershape_util.cc:326] The shape of node add_88/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.133941: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_44/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.133958: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_44/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133974: W tf_adapter/util/infershape_util.cc:326] The shape of node add_89/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.133994: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_175/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134011: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_175/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134028: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_175/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134045: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_148/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.134069: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_148/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.134086: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_149/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.134101: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_149/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.134124: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_176/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.134141: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_176/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.134158: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_176/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.134175: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_149/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.134201: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_149/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.134219: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_150/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.134234: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_150/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.134257: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_177/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.134274: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_177/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.134290: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_177/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.134307: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_150/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134336: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_150/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134354: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_151/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134368: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_151/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.134515: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.134534: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.134551: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.134568: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.134589: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.134606: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.134623: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.134640: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.134657: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.134674: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_97_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.134760: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.134777: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.134794: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.134814: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.134831: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.134848: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.134865: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.134881: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_98_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.134898: W tf_adapter/util/infershape_util.cc:326] The shape of node add_90/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.134918: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_45/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.134936: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_45/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134953: W tf_adapter/util/infershape_util.cc:326] The shape of node add_91/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134970: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_178/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.134986: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_178/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135003: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_178/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135023: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_151/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.135044: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_151/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.135062: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_152/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.135076: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_152/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.135103: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_179/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.135120: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_179/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.135137: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_179/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.135153: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_152/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.135174: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_152/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.135190: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_153/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.135205: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_153/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.135230: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_180/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.135247: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_180/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.135263: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_180/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.135280: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_153/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135300: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_153/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135317: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_154/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135332: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_154/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.135480: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.135501: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.135518: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.135536: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.135553: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.135570: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.135586: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.135606: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.135624: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.135640: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_99_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.135725: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.135743: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.135759: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.135775: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.135793: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.135810: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.135830: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.135847: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_100_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.135864: W tf_adapter/util/infershape_util.cc:326] The shape of node add_92/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.135881: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_46/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.135898: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_46/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135915: W tf_adapter/util/infershape_util.cc:326] The shape of node add_93/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135931: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_181/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135951: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_181/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135968: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_181/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.135985: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_154/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.136006: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_154/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.136023: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_155/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.136038: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_155/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.136065: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_182/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.136082: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_182/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.136099: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_182/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.136116: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_155/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.136140: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_155/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.136157: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_156/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.136172: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_156/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.136194: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_183/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.136210: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_183/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.136226: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_183/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.136243: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_156/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136267: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_156/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136285: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_157/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136299: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_157/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.136460: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.136480: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.136497: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.136515: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.136532: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.136552: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.136570: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.136587: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.136604: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.136621: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_101_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.136709: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.136727: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.136744: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.136760: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.136781: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.136798: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.136815: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.136832: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_102_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.136849: W tf_adapter/util/infershape_util.cc:326] The shape of node add_94/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.136866: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_47/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.136886: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_47/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136904: W tf_adapter/util/infershape_util.cc:326] The shape of node add_95/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136921: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_184/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136937: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_184/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136954: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_184/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.136970: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_157/Conv2D output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.136994: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_157/BiasAdd output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.137012: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_158/FusedBatchNormV3 output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.137027: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_158/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.137050: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_185/Softplus output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.137066: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_185/Tanh output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.137086: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_185/mul output 0 is [10000,?,256,512], unknown shape.
+2020-12-18 06:30:37.137104: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_158/Conv2D output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.137125: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_158/BiasAdd output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.137142: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_159/FusedBatchNormV3 output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.137156: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_159/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.137182: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_186/Softplus output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.137199: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_186/Tanh output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.137216: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_186/mul output 0 is [10000,?,256,1024], unknown shape.
+2020-12-18 06:30:37.137232: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_159/Conv2D output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137253: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_159/BiasAdd output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137269: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_160/FusedBatchNormV3 output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137283: W tf_adapter/util/infershape_util.cc:326] The shape of node batch_normalization_160/FusedBatchNormV3 output 5 is ?, unknown shape.
+2020-12-18 06:30:37.137430: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.137448: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.137468: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.137485: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103_1/Tensordot/MatMul output 0 is [?,32], unknown shape.
+2020-12-18 06:30:37.137503: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.137520: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103_1/Tensordot output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.137536: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.137553: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103_1/BiasAdd output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.137573: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.137590: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_103_1/Relu output 0 is [?,?,?,32], unknown shape.
+2020-12-18 06:30:37.137672: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.137692: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104_1/Tensordot/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.137709: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.137726: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104_1/Tensordot/MatMul output 0 is [?,256], unknown shape.
+2020-12-18 06:30:37.137743: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.137760: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104_1/Tensordot output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.137777: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.137796: W tf_adapter/util/infershape_util.cc:326] The shape of node dense_104_1/BiasAdd output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.137814: W tf_adapter/util/infershape_util.cc:326] The shape of node add_96/add output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.137831: W tf_adapter/util/infershape_util.cc:326] The shape of node activation_48/Sigmoid output 0 is [?,?,?,256], unknown shape.
+2020-12-18 06:30:37.137848: W tf_adapter/util/infershape_util.cc:326] The shape of node multiply_48/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137865: W tf_adapter/util/infershape_util.cc:326] The shape of node add_97/add output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137882: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_187/Softplus output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137898: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_187/Tanh output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137918: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_187/mul output 0 is [10000,?,256,256], unknown shape.
+2020-12-18 06:30:37.137936: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_160/Conv2D output 0 is [10000,?,256,4], unknown shape.
+2020-12-18 06:30:37.137957: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_160/BiasAdd output 0 is [10000,?,256,4], unknown shape.
+2020-12-18 06:30:37.137974: W tf_adapter/util/infershape_util.cc:326] The shape of node conv2d_160/Sigmoid output 0 is [10000,?,256,4], unknown shape.
+2020-12-18 06:30:37.137990: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_188/strided_slice output 0 is [10000,?,256,2], unknown shape.
+2020-12-18 06:30:37.138015: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_188/strided_slice_1 output 0 is [10000,?,256,2], unknown shape.
+2020-12-18 06:30:37.138035: W tf_adapter/util/infershape_util.cc:326] The shape of node lambda_188/concat output 0 is [10000,?,512,2], unknown shape.
+2020-12-18 06:30:37.138070: W tf_adapter/util/infershape_util.cc:326] The shape of node flatten_13/Reshape output 0 is [?,?], unknown shape.
+2020-12-18 06:30:37.138084: I tf_adapter/util/infershape_util.cc:395] InferShapeUtil::InferShape success
+2020-12-18 06:30:37.168491: I tf_adapter/kernels/geop_npu.cc:440] [GEOP] In GEOP computeAsync, kernel_name:GeOp7_0 ,TFadapter cost time: [54 ms]
+2020-12-18 06:30:37.168526: I tf_adapter/kernels/geop_npu.cc:442] [GEOP] TFadpter process graph success, GE parser begin, kernel_name:GeOp7_0 ,tf session: direct62e56b9912d9fa3a ,graph id :1
+2020-12-18 06:30:37.443413: I tf_adapter/kernels/geop_npu.cc:508] [GEOP] Tensorflow graph parse to ge graph success, kernel_name:GeOp7_0 ,tf session: direct62e56b9912d9fa3a ,graph id: 1
+2020-12-18 06:30:37.444515: I tf_adapter/kernels/geop_npu.cc:539] [GEOP] Add graph to ge session success, kernel_name:GeOp7_0 ,tf session: direct62e56b9912d9fa3a ,graph id:1
+2020-12-18 06:30:37.448674: I tf_adapter/kernels/geop_npu.cc:580] [GEOP] Call ge session RunGraphAsync, kernel_name:GeOp7_0 ,tf session: direct62e56b9912d9fa3a ,graph id: 1
+2020-12-18 06:30:37.448794: I tf_adapter/kernels/geop_npu.cc:593] [GEOP] End GeOp::ComputeAsync, kernel_name:GeOp7_0, ret_status:success ,tf session: direct62e56b9912d9fa3a ,graph id: 1 [334 ms]
+2020-12-18 06:31:03.162422: I tf_adapter/kernels/geop_npu.cc:76] BuildOutputTensorInfo, num_outputs:1
+2020-12-18 06:31:03.162527: I tf_adapter/kernels/geop_npu.cc:103] BuildOutputTensorInfo, output index:0, total_bytes:40960000, shape: 10000 1024, tensor_ptr:281464802308160, output281464922894352
+2020-12-18 06:31:03.196704: I tf_adapter/kernels/geop_npu.cc:573] [GEOP] RunGraphAsync callback, status:0, kernel_name:GeOp7_0[ 25748086us]
+2020-12-18 06:31:03.317587: I tf_adapter/kernels/geop_npu.cc:216] [GEOP] GeOp start to finalize, tf session: direct62e56b9912d9fa3a, graph_id_: 1
+2020-12-18 06:31:03.317655: I tf_adapter/util/session_manager.cc:69] find ge session connect with tf session direct62e56b9912d9fa3a
+2020-12-18 06:31:04.748262: I tf_adapter/util/session_manager.cc:74] destroy ge session connect with tf session direct62e56b9912d9fa3a success.
+2020-12-18 06:31:05.268774: I tf_adapter/util/ge_plugin.cc:207] [GePlugin] Start destroy tdt host.
+2020-12-18 06:31:05.280584: I tf_adapter/util/ge_plugin.cc:212] [GePlugin] Tdt host destroy succeed.
+2020-12-18 06:31:05.280608: I tf_adapter/kernels/geop_npu.cc:234] [GEOP] GePlugin Finalize success
+2020-12-18 06:31:05.280620: I tf_adapter/util/generate_report.cc:96] [GenerateReport] All nodes are supported, no need to save report.
+2020-12-18 06:31:05.280634: I tf_adapter/kernels/geop_npu.cc:245] [GEOP] GeOp Finalize success, tf session: direct62e56b9912d9fa3a, graph_id_: 1
+done8  time: 0:00:32.305920
+2020-12-18 06:31:06.450168: I tf_adapter/util/ge_plugin.cc:56] [GePlugin] destroy constructor begin
+2020-12-18 06:31:06.450226: I tf_adapter/util/ge_plugin.cc:195] [GePlugin] Ge has already finalized.
+2020-12-18 06:31:06.450238: I tf_adapter/util/ge_plugin.cc:58] [GePlugin] destroy constructor end
